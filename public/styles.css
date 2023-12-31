@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #board {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 6px solid white;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  tr {
+    height: 100px;
+  }
+  
