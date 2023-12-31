@@ -4,7 +4,7 @@ const socketIO = require('socket.io');
 const app = express();
 app.use(express.static('public'));
 const server = http.createServer(app);
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const socket = socketIO(server);
 server.listen(PORT, function() {
   console.log(`Servidor rodando na porta ${PORT}`);
