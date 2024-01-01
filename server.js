@@ -59,14 +59,12 @@ function markPosition(position,client){
       symbol = symbols[0]
       PlayerCellsMarked[client.id].push(position)
       socket.emit("markPosition",{position,symbol})
-      console.log("foi")
       plays+=1
       totalCellsMarked.push(position)
     } else if(client===clientsOrder[1] && (plays % 2 == 0)){
       symbol = symbols[1]
       PlayerCellsMarked[client.id].push(position)
       socket.emit("markPosition",{position,symbol})
-      console.log("foi")
       plays+=1
       totalCellsMarked.push(position)
     }
@@ -88,7 +86,6 @@ function resetMarksPosition(){
 }
 
 function checkWin(client){
-  console.log(PlayerCellsMarked[client.id].length)
   cont = 0
   for(i=0;i<combinations.length;i++){
     combination = combinations[i]
@@ -121,7 +118,6 @@ function checkWin(client){
     }
     cont = 0
   }
-  console.log(PlayerCellsMarked[client.id])
 }
 
 function playersConnected(){
@@ -130,7 +126,6 @@ function playersConnected(){
 }
 
 function checkTie(){
-  console.log(totalCellsMarked+" total")
   if(totalCellsMarked.length === 9){
     console.log("empate")
   }
