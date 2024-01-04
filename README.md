@@ -23,7 +23,7 @@ Para executar o projeto localmente, siga estas etapas:
 ## 🎮 Uso
 
 Para executar o projeto localmente, siga estas etapas:
-  <br>1.Abra o jogo no seu navegador.
+  <br>1.Abra o jogo no seu navegador em localhost:8080.
   <br>2.Convide um amigo para jogar.
   <br>3.Clique nas células para fazer sua jogada.
   <br>4.O jogador que conseguir uma linha, coluna ou diagonal com três símbolos iguais vence.
