@@ -16,7 +16,7 @@ Para executar o projeto localmente, siga estas etapas:
 
    ```bash
    git clone https://github.com/Fco-Correia/TicTacToe
-   cd jogo-da-velha
+   cd TicTacToe
    npm install
    npm start
 
